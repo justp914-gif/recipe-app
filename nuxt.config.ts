@@ -12,7 +12,12 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
 
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    prerender: {
+      failOnError: false,
+      crawlLinks: false,
+      routes: ['/']
+    }
   },
 
   app: {
