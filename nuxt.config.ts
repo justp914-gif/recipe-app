@@ -3,15 +3,13 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  ssr: false,
+
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2025-01-15',
 
   future: { compatibilityVersion: 4 },
-
-  routeRules: {
-    '/**': { prerender: true }
-  },
 
   nitro: {
     preset: 'static'
