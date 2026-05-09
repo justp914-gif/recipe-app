@@ -5,8 +5,6 @@
       class="search-bar__input"
       type="search"
       placeholder="Найти рецепт..."
-      :value="modelValue"
-      @input="query = ($event.target as HTMLInputElement).value"
     />
     <button type="submit" class="search-bar__btn">
       <span>🔍</span>

@@ -17,11 +17,11 @@ useSeoMeta({
 <template>
   <UApp>
     <div style="min-height:100vh;display:flex;flex-direction:column">
-      <TheHeader />
+      <LayoutTheHeader />
       <main style="flex:1">
         <NuxtPage />
       </main>
-      <TheFooter />
+      <LayoutTheFooter />
     </div>
   </UApp>
 </template>

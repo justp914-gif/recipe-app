@@ -4,13 +4,13 @@
       <h1 class="hero__title">Найдите идеальный рецепт 🍽</h1>
       <p class="hero__subtitle">Тысячи блюд со всего мира — ищите, сохраняйте, готовьте</p>
       <div class="hero__search">
-        <SearchBar :model-value="filters.query" @search="setQuery" />
+        <UiSearchBar :model-value="filters.query" @search="setQuery" />
       </div>
     </section>
 
     <div class="page-container">
       <div style="margin-bottom:1.5rem">
-        <FilterPanel
+        <UiFilterPanel
           :categories="categories"
           :active="filters.category"
           @select="setCategory"
